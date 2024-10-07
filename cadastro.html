@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon/world-map (1).ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>SPHERE</title>
+</head>
+<body class="d-flex flex-column" style="min-height: 100vh;">
+    <header>
+        <!-- MENU -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand text-info-emphasis" href="#"> <i class="bi bi-app-indicator fs-4 "></i>SPHERA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Eventos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Quem somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="Procurar Eventos">
+                        <input class="form-control me-2" type="search" placeholder="Procurar Eventos" aria-label="Procurar Eventos">
+                        <button class="btn btn-indigo" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- FIM MENU -->
+    </header>
+    <main class="flex-fill py-5">
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">Cadastro de Evento Cultural</h1>
+            <form id="form-evento">
+                <!-- Início do formulário -->
+                <div class="mb-3">
+                    <label for="titulo" class="form-label">Título do Evento:</label>
+                    <input type="text" class="form-control" id="titulo" placeholder="Titulo do evento" required/>
+                </div>
+                <div class="mb-3">
+                    <label for="descricao" class="form-label">Descrição:</label>
+                    <textarea class="form-control" id="descricao" rows="3" required></textarea>
+                </div>
+                <div class="form-floating mb-3">
+                    <div class="col-md-6">
+                        <input type="date" class="form-control" id="data" required />
+                        <label for="data" class="form-label">Data do Evento:</label>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="horario" class="form-label">Horário do Evento:</label>
+                        <input type="time" class="form-control" id="horario" required />
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="local" class="form-label">Local do Evento:</label>
+                    <input type="text" class="form-control" id="local" required />
+                </div>
+                <!-- Novo campo para upload de arquivo -->
+                <div class="mb-3">
+                    <label for="imagem" class="form-label">Upload de Imagem:</label>
+                    <input type="file" class="form-control" id="imagem" accept="image/*" />
+                </div>
+                <!-- Novo campo de seleção -->
+                <div class="mb-3">
+                    <label for="categoria" class="form-label">Categoria do Evento:</label>
+                    <select class="form-select" id="categoria" required>
+                        <option value="" disabled selected>Escolha uma categoria...</option>
+                        <option value="musica">Música</option>
+                        <option value="teatro">Teatro</option>
+                        <option value="exposicao">Exposição</option>
+                        <option value="workshop">Workshop</option>
+                    </select>
+                </div>
+                <!-- Novo campo de checkbox -->
+                <div class="mb-3">
+                    <label class="form-label">Serviços Disponíveis:</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="wifi" />
+                        <label class="form-check-label" for="wifi">Wi-Fi</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="estacionamento" />
+                        <label class="form-check-label" for="estacionamento">Estacionamento</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="catering" />
+                        <label class="form-check-label" for="catering">Serviço de Catering</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="Acessibilidade" />
+                      <label class="form-check-label" for="Acessibilidade">Acessibilidade</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Sanitários" />
+                    <label class="form-check-label" for="Sanitários">Sanitários</label>
+                  </div>
+                  <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="wifi" />
+                        <label class="form-check-label" for="wifi">Wi-Fi</label>
+                  </div>
+                  <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="estacionamento" />
+                        <label class="form-check-label" for="estacionamento">Estacionamento</label>
+                  </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Restrições de evento:</label><br>
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="Maior de +18" />
+                          <label class="form-check-label" for="Maior de +18">Maior de +18</label>
+                      </div>
+                      <div class="form-check">
+                          <input class="form-check-input" type="checkbox" id="Evento infantil" />
+                          <label class="form-check-label" for="Evento infantil">Evento infantil</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="Evento livre" />
+                        <label class="form-check-label" for="Evento livre">Evento livre</label>
+                    </div>
+                <!-- Novo campo de botão de rádio -->
+                <div class="mb-3">
+                    <label class="form-label">Tipo de Evento:</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tipo" id="presencial" value="presencial" required />
+                        <label class="form-check-label" for="presencial">Presencial</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="tipo" id="online" value="online" />
+                        <label class="form-check-label" for="online">Online</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="tipo" id="Gratuito" value="Gratuito" required />
+                      <label class="form-check-label" for="Gratuito">Gratuito</label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Cadastrar Evento</button>
+            </form>
+            <!-- Fim do formulário -->
+        </div>
+    </main>
+   
+    <footer class="footer bg-dark text-light pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">SPHERA</h5>
+                    <p>Descubra eventos culturais e shows em sua cidade.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">Quem Somos</h5>
+                    <p>Somos uma plataforma dedicada a divulgar os melhores eventos culturais para você.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">Contato</h5>
+                    <p>Email: contato@sphere.com</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <p>&copy; 2024 SPHERE. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
