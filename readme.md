@@ -1,5 +1,6 @@
 ### Curso Técnico de Desenvolvimento de Sistemas - Senai Itapeva
-# SPHERE
+<h1 align="center">SPHERE</h1>
+
 ![imagem de capa](assets/img/readme/capareadme.png)
 
 **Descrição:**
