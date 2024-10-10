@@ -23,11 +23,10 @@ A SPHERE é um aplicativo de divulgação de eventos culturais da cidade de itap
 
 ## Tecnologias Utilizadas
 - **Linguagem/Frameworks:**
- Liste as principais tecnologias usadas no projeto, como por exemplo:
- - HTML
- - CSS
- - Java Script
- - Bootstrap
+ Liste as principais tecnologias usadas no projeto, como por exemplo:         
+![html5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ## Autores
 Mencione o nome dos alunos responsáveis pelo desenvolvimento do projeto e seus respectivos contatos.
 - Manoela Bavia Camargo Pereira 1 - MBávia - manoela.bavia.senai@gmail.com
