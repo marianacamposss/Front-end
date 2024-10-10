@@ -1,5 +1,6 @@
 ### Curso Técnico de Desenvolvimento de Sistemas - Senai Itapeva
 # SPHERE
+![imagem de capa](assets/img/readme/capareadme.png)
 **Descrição:**
 A SPHERE é um aplicativo de divulgação de eventos culturais da cidade de itapeva-SP. Dentro da plataforma os úsuarios podem navegar, descobrir e divulgar novos eventos.
 ## Índice
